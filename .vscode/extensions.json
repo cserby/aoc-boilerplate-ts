@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "orta.vscode-jest",
+    "esbenp.prettier-vscode"
+  ],
+  "unwantedRecommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "visualstudioexptteam.vscodeintellicode",
+    "tabnine.tabnine-vscode",
+    "codeium.codeium",
+    "amazonwebservices.aws-toolkit-vscode",
+    "amazonwebservices.codewhisperer-for-command-line-companion",
+    "saoudrizwan.claude-dev",
+    "anthropic.claude-code",
+    "googlecloudtools.cloudcode",
+    "google.generative-ai-studio"
+  ]
+}

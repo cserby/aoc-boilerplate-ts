@@ -1,2 +1,14 @@
 node_modules/
 inputs/
+
+# IntelliJ IDEA - ignore user-specific files but track AI configuration
+/.idea/*
+!/.idea/externalDependencies.xml
+!/.idea/ai-config.xml
+!/.idea/inspectionProfiles/
+!/.idea/INTELLIJ_AI_SETUP.md
+/.idea/workspace.xml
+*.iml
+*.iws
+*.ipr
+out/
