@@ -9,17 +9,29 @@ Typescript boilerplate project for Advent of Code
 This is intentional - Advent of Code is about learning and problem-solving, not having AI write the solutions for you.
 
 # Features
- * `nvm`
- * `yarn`
- * `typescript`
- * `eslint` with [Stylistic](https://eslint.style/packages/ts)
- * `ts-jest`
+ * Node 26 (`.nvmrc`), runs `.ts` files natively — no build step
+ * `pnpm`
+ * `typescript` 6 (strict, type-check only)
+ * `eslint` with [typescript-eslint](https://typescript-eslint.io) (strict, type-checked) and [Stylistic](https://eslint.style)
+ * `vitest`
+ * GitHub Actions CI and Dependabot
  * Configuration for VSCode
-    * **No AI Assistants** (Copilot, Claude, Gemini, Codeium, TabNine, etc.)
+    * **No AI Assistants** (`chat.disableAIFeatures`, Copilot, Claude, Gemini, Codeium, TabNine, etc.)
     * Use `eslint` for formatting
-    * No watch mode on `jest`
     * See [AGENTS.md](./AGENTS.md) for complete AI policy
  * Configuration for IntelliJ IDEA
-    * **All AI features disabled** (JetBrains AI, Copilot, Tabnine, Codeium, etc.)
-    * See [.idea/INTELLIJ_AI_SETUP.md](./.idea/INTELLIJ_AI_SETUP.md) for setup instructions
+    * **JetBrains AI Assistant disabled** via [`.noai`](./.noai)
+    * See [.idea/INTELLIJ_AI_SETUP.md](./.idea/INTELLIJ_AI_SETUP.md) for disabling third-party AI plugins
     * See [AGENTS.md](./AGENTS.md) for complete AI policy
+
+# Usage
+
+```sh
+nvm use
+pnpm install
+pnpm check                         # typecheck + lint + test
+pnpm test:watch                    # vitest in watch mode
+node src/day0.ts day0.input.txt    # run a day against inputs/day0.input.txt
+```
+
+One module per day under `src/` exporting `part1`/`part2(input: string)`; puzzle files go in `inputs/`.
