@@ -4,15 +4,17 @@
   "editor.formatOnType": true,
   "editor.tabSize": 2,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.guides.bracketPairs": true,
-  "jest.autoRun": {
-    "watch": false
-  },
   "terminal.integrated.scrollback": 100000,
 
+  "chat.disableAIFeatures": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "github.copilot.enable": {
     "*": false
