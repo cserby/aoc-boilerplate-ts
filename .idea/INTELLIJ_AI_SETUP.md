@@ -4,7 +4,7 @@ This repository is an **AI-free coding zone**. See [../AGENTS.md](../AGENTS.md) 
 
 ## Automatic Configuration
 
-The `.idea` directory contains configuration files that should automatically disable AI features. However, you should verify these settings.
+The empty [`.noai`](../.noai) file in the project root turns off JetBrains AI Assistant for this project, in any JetBrains IDE. It does not cover third-party plugins (Copilot, Tabnine, Codeium, Claude, Gemini, ...), so follow the manual steps below for those.
 
 ## Manual Steps to Disable AI in IntelliJ IDEA
 
@@ -84,7 +84,7 @@ Or better yet: **Uninstall the Cloud Code plugin completely** from the Plugins s
 
 After applying these settings:
 1. Restart IntelliJ IDEA
-2. Open a TypeScript file
+2. Open a source file
 3. Start typing - you should see NO AI-powered suggestions
 4. Verify the AI Assistant icon is not visible in the toolbar
 
