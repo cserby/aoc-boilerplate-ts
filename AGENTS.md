@@ -41,6 +41,7 @@ This repository is intended for:
 ## Enforcement
 
 This policy is enforced through:
+- `.noai` (JetBrains AI Assistant)
 - VSCode workspace settings (`.vscode/settings.json`)
 - Extension recommendations (`.vscode/extensions.json`)
 - This documentation file
